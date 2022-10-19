@@ -152,15 +152,40 @@ function removeBlank(string){
 console.log(removeBlank("Não ficará   espaços em branco"))
 
 
-// Exercicio 10 Incompleto //
+// Exercicio 10 Completo //
 
 
-/* function encryptText(string){
-    for(let i = 0; i = string.length; i++){
-        if(string[i] == a)
+function encryptText(string){
+
+    let contagem = ""
+    for(let i = 0; i < string.length; i++){
+        if(string[i] == "A"){
+            contagem += "X"
+        } else if (string[i] == "E"){
+            contagem += "Y"
+        }else if (string[i] == "I"){
+            contagem += "W"
+        }else if (string[i] == "O"){
+            contagem += "K"
+        }else if (string[i] == "U"){
+            contagem += "Z"
+        }else if (string[i] == "a"){
+            contagem += "x"
+        }else if (string[i] == "e"){
+            contagem += "y"
+        }else if (string[i] == "i"){
+            contagem += "w"
+        }else if (string[i] == "o"){
+            contagem += "k"
+        }else if (string[i] == "u"){
+            contagem += "z"
+        } else {
+            contagem += string[i]
+        }
     }
+    return contagem
 }
 
-console.log(encryptText("Uma frase ultra secreta que precisa ser criptografada")) */
+console.log(encryptText("Uma frase ultra secreta que precisa ser criptografada"))
 
 

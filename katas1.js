@@ -13,74 +13,90 @@ console.log(cubicSquare())
 // Exercicio 2 Completo //
 
 
-function divisiblesFor(limitador, divisor){
-    for(let l = limitador; l >= divisor; l--){
-        if(l % divisor == 0){
-            console.log(l)
+function divisiblesFor(limitador, divisor) {
+    
+    let contador = 0
+    for (let i = 1; i <= limitador; i++) {
+        if(i % divisor == 0){
+            contador++
+            console.log(i)
         }
     }
 }
-
 console.log(divisiblesFor(100, 10))
 
 
-// Exercicio 3 incompleta //
+// Exercicio 3 Completo //
 
 
 
-/* function stringElement(string, pesquisa){
+function stringElement(string, number){
 
-    let contador = 0
+    for(let i = 0; i <=string.length; i++){
+        if(i == number){
+            return (string[i].toUpperCase())
+        } 
+    }
+    return "Letra não encontrada"
+}
+
+console.log(stringElement("algorítmos", 7))
+
+
+// Exercicio 4 Completo //
+
+
+function stringSlicer(string, number){
+    
+    let contador = ""
     for(let i = 0; i <= string.length; i++){
-        if(string[i] == pesquisa){
-            contador++
+        if(i <= number){
+            contador += (string[i])
         }
     }
     return contador
 }
 
-console.log(stringElement("algorítmos", 7)) */
+console.log(stringSlicer(" ALGORÌTMOS", 4))
 
 
-// Exercicio 4 incompleta //
+// Exercicio 5 Completo //
 
 
-/* function stringSlicer(string, numero){
-    for(let i = 0; i <= string.length; i++){
-
+function stringRest(string, number){
+    
+    let contador = ""
+    for(let i = 0; i < string.length; i++){
+        if(i >= number){
+            contador += (string[i])
+        }
     }
-} */
+    return contador
+}
 
+console.log(stringRest("ALGORÌTMOS", 2))
 
-// Exercicio 5 incompleta //
-
-
-/* function stringRest(string, numero){
-    for(let i = 0; i <= string.length; i++){
-
-    }
-} */
 
 // Exercicio 6 Completo //
 
 
 function countVowels(string) {
 
-    let contagem = ""
+    let contagem = 0
     for (let i = 0; i < string.length; i++) {
         if (string[i] == "a") {
-            contagem += [i]
+            contagem++
         } else if (string[i] == "e") {
-            contagem += [i]
+            contagem++
         } else if (string[i] == "i") {
-            contagem += [i]
+            contagem++
         } else if (string[i] == "o") {
-            contagem += [i]
+            contagem++
         } else if (string[i] == "u") {
-            contagem += [i]
+            contagem++
         }
     }
-    return `a palavra ${string} tem ${contagem.length} vogais`
+    return `A palavra ${string} tem ${contagem} vogais.`
 }
 
 console.log(countVowels("abacaxi"))
@@ -91,13 +107,13 @@ console.log(countVowels("abacaxi"))
 
 function countTextOccurrences(string, letra) {
 
-    let contagem = ""
+    let contagem = 0
     for(let i = 0; i < string.length; i++){
         if(string[i] == letra){
-            contagem += [i]
+            contagem++
         }
     }
-    return `A letra ${letra} aparece ${contagem.length}`
+    return `A letra ${letra} aparece ${contagem} vezes na palavra ${string}.`
 }
 
 console.log (countTextOccurrences("abacaxi", "a"))
@@ -112,10 +128,10 @@ function textBackwars(string){
     for(let i = string.length - 1; i >= 0; i--){
         aliando += string[i]
     }
-    console.log(aliando)
+    return `A palavra ${string} ao contrário é ${aliando}.`
 }
 
-textBackwars("abacaxi")
+console.log(textBackwars("abacaxi"))
 
 
 // Exercicio 9 Completo //

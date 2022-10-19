@@ -1,19 +1,19 @@
 // Exercicio 1 Completo //
 
 
-/* function cubicSquare(){
+function cubicSquare(){
     for(let i = 1; i <= 10; i++){
         console.log(i * i * i)
     }
 }
 
-console.log(cubicSquare()) */
+console.log(cubicSquare())
 
 
 // Exercicio 2 Completo //
 
 
-/* function divisiblesFor(limitador, divisor){
+function divisiblesFor(limitador, divisor){
     for(let l = limitador; l >= divisor; l--){
         if(l % divisor == 0){
             console.log(l)
@@ -21,7 +21,7 @@ console.log(cubicSquare()) */
     }
 }
 
-console.log(divisiblesFor(100, 10)) */
+console.log(divisiblesFor(100, 10))
 
 
 // Exercicio 3 incompleta //
@@ -61,14 +61,29 @@ console.log(stringElement("algorítmos", 7)) */
     }
 } */
 
-// Exercicio 6 incompleto //
+// Exercicio 6 Completo //
 
-/* 
+
 function countVowels(string) {
 
+    let contagem = ""
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] == "a") {
+            contagem += [i]
+        } else if (string[i] == "e") {
+            contagem += [i]
+        } else if (string[i] == "i") {
+            contagem += [i]
+        } else if (string[i] == "o") {
+            contagem += [i]
+        } else if (string[i] == "u") {
+            contagem += [i]
+        }
+    }
+    return `a palavra ${string} tem ${contagem.length} vogais`
 }
 
-console.log(countVowels("abacaxi")) */
+console.log(countVowels("abacaxi"))
 
 
 // Execicio 7 Completo //
@@ -82,16 +97,16 @@ function countTextOccurrences(string, letra) {
             contagem += [i]
         }
     }
-    return `A letra ${letra} aparese ${contagem.length}`
+    return `A letra ${letra} aparece ${contagem.length}`
 }
 
 console.log (countTextOccurrences("abacaxi", "a"))
 
 
-// Exercicio 8 Completo // 
+// Exercicio 8 Completo //
 
 
-/* function textBackwars(string){
+function textBackwars(string){
 
     let aliando = ""
     for(let i = string.length - 1; i >= 0; i--){
@@ -100,13 +115,13 @@ console.log (countTextOccurrences("abacaxi", "a"))
     console.log(aliando)
 }
 
-textBackwars("abacaxi") */
+textBackwars("abacaxi")
 
 
 // Exercicio 9 Completo //
 
 
-/* function removeBlank(string){
+function removeBlank(string){
 
     let remover = ""
 
@@ -118,10 +133,10 @@ textBackwars("abacaxi") */
     return remover
 }
 
-console.log(removeBlank("Não ficará   espaços em branco")) */
+console.log(removeBlank("Não ficará   espaços em branco"))
 
 
-// Exercicio 10 //
+// Exercicio 10 Incompleto //
 
 
 /* function encryptText(string){
